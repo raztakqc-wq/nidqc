@@ -1,0 +1,33 @@
+@import "leaflet/dist/leaflet.css";
+html, body { margin:0; padding:0; background:#09090b; color:#f4f4f5; font-family:Arial, Helvetica, sans-serif; }
+* { box-sizing:border-box; }
+button, input, select, textarea { font: inherit; }
+.page { min-height:100vh; background:linear-gradient(180deg,#09090b 0%,#111827 100%); }
+.container { max-width:1240px; margin:0 auto; padding:24px; }
+.card { background:rgba(24,24,27,.9); border:1px solid #27272a; border-radius:24px; box-shadow:0 20px 40px rgba(0,0,0,.25); }
+.input,.select,.textarea { width:100%; background:#09090b; color:#f4f4f5; border:1px solid #3f3f46; border-radius:16px; padding:12px 14px; }
+.textarea { min-height:96px; resize:vertical; }
+.button { background:#f4f4f5; color:#09090b; border:0; border-radius:16px; padding:12px 16px; cursor:pointer; font-weight:600; }
+.button.secondary { background:transparent; color:#f4f4f5; border:1px solid #3f3f46; }
+.button.small { padding:10px 12px; border-radius:12px; font-size:14px; }
+.grid { display:grid; gap:24px; }
+.grid-hero { grid-template-columns:1.15fr .85fr; }
+.grid-stats, .grid-tests { grid-template-columns:repeat(4,1fr); }
+@media (max-width:960px){ .grid-hero,.grid-stats,.grid-tests{ grid-template-columns:1fr; } }
+.row { display:flex; gap:12px; flex-wrap:wrap; }
+.between { display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; }
+.badge { display:inline-flex; align-items:center; border-radius:999px; padding:6px 12px; font-size:12px; font-weight:700; }
+.badge.high { background:rgba(127,29,29,.35); color:#fecaca; border:1px solid #b91c1c; }
+.badge.medium { background:rgba(120,53,15,.35); color:#fde68a; border:1px solid #d97706; }
+.badge.low { background:rgba(63,63,70,.8); color:#fafafa; border:1px solid #52525b; }
+.badge.new { background:#1e293b; color:#e2e8f0; }
+.badge.sent { background:rgba(76,29,149,.35); color:#ddd6fe; }
+.badge.fixed { background:rgba(6,78,59,.35); color:#a7f3d0; }
+.list-item { border:1px solid #27272a; border-radius:24px; background:#09090b; padding:20px; }
+.list-item.selected { border-color:#71717a; background:#18181b; }
+.stat { padding:20px; }
+.muted { color:#a1a1aa; }
+.header-strip { border-bottom:1px solid #27272a; background:rgba(9,9,11,.85); position:sticky; top:0; z-index:50; backdrop-filter:blur(10px); }
+.mapWrap { height:500px; border-radius:0 0 24px 24px; overflow:hidden; }
+.leaflet-container { width:100%; height:100%; }
+.note { font-size:14px; color:#d4d4d8; padding:14px 16px; border:1px solid #27272a; border-radius:16px; background:#09090b; }
